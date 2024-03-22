@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html> 
 <head>
     <title>Furniture Sale</title>
     <style>
@@ -62,8 +62,17 @@
         }
 
         .item img {
-            max-width: 100%;
-            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            padding: 10px;
+            background: #f9f9f9;
+            max-width: 75%;
+            border-radius: 10px;
+            align-items: center;
         }
         /* Popup styles */
         #popup {
@@ -98,20 +107,34 @@
 
     <div class="container">
         <section class="content">
-            <p>Welcome to our furniture sale! We're moving out at the end of May and EVERYTHING MUST GO! Below you can find items available for sale with their descriptions and prices. We are willing to negotiate prices IF you are buying multiple items OR you can pick up the items on your own. We are located near 160 N Beacon St, 02135. If you're interested in an item, please contact us!</p>
+            <p>Welcome to our furniture sale! Below you can find items available for sale with their descriptions and prices. <br>
+                <br>
+                - Items will be available May 20th <br>
+                - 15% off if you can pickup items (164 N Beacon St, 02135) <br>
+                - 3+ items --> 10% off </p>
             
             <!-- Items -->
             <div class="item" onclick="showPopup()">
                 <h2>TV Stand</h2>
                 <p>Modern LED TV Stand, 60-inch, White, with Glass Shelves.</p>
-                <img src="path/to/image.jpg" alt="Item Image">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="images/tvstand4.jpg" style="width:50%" alt="TV Stand Image 1">
+                    </div>
+                    <!-- Add as many .mySlides divs as you have images -->
+                    <!-- Navigation dots -->
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                    </div>
+                </div>
                 <p>Price: $100.00</p>
             </div>
             
             <div class="item" onclick="showPopup()">
                 <h2>Coffee Table</h2>
                 <p>Panana Modern Coffee Table with 2 Drawers, White.</p>
-                <img src="path/to/image.jpg" alt="Item Image">
+                <img src="images/tvstand1.jpg" alt="Item Image">
                 <p>Price: $50.00</p>
             </div>
 
@@ -182,3 +205,4 @@
     </script>
 </body>
 </html>
+

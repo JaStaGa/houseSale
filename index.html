@@ -37,6 +37,10 @@
             border-radius: 5px;
         }
         .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
             border: 1px solid #ddd;
             margin-bottom: 10px;
             padding: 10px;
@@ -62,17 +66,8 @@
         }
 
         .item img {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            border: 1px solid #ddd;
-            margin-bottom: 10px;
-            padding: 10px;
-            background: #f9f9f9;
             max-width: 75%;
             border-radius: 10px;
-            align-items: center;
         }
         /* Popup styles */
         #popup {
@@ -110,24 +105,14 @@
             <p>Welcome to our furniture sale! Below you can find items available for sale with their descriptions and prices. <br>
                 <br>
                 - Items will be available May 20th <br>
-                - 15% off if you can pickup items (164 N Beacon St, 02135) <br>
-                - 3+ items --> 10% off </p>
+                - 15% off --> if you can pickup items (164 N Beacon St, 02135) <br>
+                - 10% off --> buying 3+ items </p>
             
             <!-- Items -->
             <div class="item" onclick="showPopup()">
                 <h2>TV Stand</h2>
                 <p>Modern LED TV Stand, 60-inch, White, with Glass Shelves.</p>
-                <div class="slideshow-container">
-                    <div class="mySlides fade">
-                        <img src="images/tvstand4.jpg" style="width:50%" alt="TV Stand Image 1">
-                    </div>
-                    <!-- Add as many .mySlides divs as you have images -->
-                    <!-- Navigation dots -->
-                    <div style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                    </div>
-                </div>
+                <img src="images/tvstand4.jpg" alt="Item Image">
                 <p>Price: $100.00</p>
             </div>
             

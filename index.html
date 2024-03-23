@@ -66,7 +66,7 @@
         }
 
         .item img {
-            max-width: 75%;
+            max-width: 50%;
             border-radius: 10px;
         }
         /* Popup styles */
@@ -91,6 +91,17 @@
             float: right;
             cursor: pointer;
         }
+        .images-container img {
+            box-sizing: border-box;
+            display: inline-block;
+            vertical-align: top;
+            max-width: 49%;
+            width: auto; /* Adjust the width as necessary */
+            height: auto; /* Maintain aspect ratio */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+
     </style>
 </head>
 <body>
@@ -104,7 +115,8 @@
         <section class="content">
             <p>Welcome to our furniture sale! Below you can find items available for sale with their descriptions and prices. <br>
                 <br>
-                - Items will be available May 20th <br>
+                - Everything was purchased in September 2023 <br>
+                - Items will be available until the end of May 2024 <br>
                 - 15% off --> if you can pickup items (164 N Beacon St, 02135) <br>
                 - 10% off --> buying 3+ items </p>
             
@@ -115,33 +127,40 @@
                 <img src="images/tvstand4.jpg" alt="Item Image">
                 <p>Price: $100.00</p>
             </div>
-            
-            <div class="item" onclick="showPopup()">
-                <h2>Coffee Table</h2>
-                <p>Panana Modern Coffee Table with 2 Drawers, White.</p>
-                <img src="images/tvstand1.jpg" alt="Item Image">
-                <p>Price: $50.00</p>
-            </div>
 
             <div class="item" onclick="showPopup()">
                 <h2>Kitchen Island w/ Leaf</h2>
                 <p>Island with Drop-Leaf Breakfast Bar, 53-inch Width, 5 Universal Wheels, Storage Cabinet, 3 Drawers, White.</p>
-                <img src="path/to/image.jpg" alt="Item Image">
-                <p>Price: $200.00</p>
+                <div class="images-container">
+                    <img src="images/island1.jpg" alt="Item Image">
+                    <img src="images/island2.jpg" alt="Second Item Image"> <!-- Update the src with your second image path -->
+                </div>
+                <p>Price: $199.99</p>
             </div>
+            
+            
+
+            <div class="item" onclick="showPopup()">
+                <h2>Convertible Sectional Sofa</h2>
+                <p>79-inch, 3 Seat, L-Shaped Sofa with Removable Pillows, Linen Fabric, Black.</p>
+                <img src="images/couch.jpg" alt="Item Image">
+                <p>Price: $149.99</p>
+            </div>
+
             
             <div class="item" onclick="showPopup()">
                 <h2>Queen Bed Frame</h2>
                 <p>Frame with Velvet Headboard, Metal Frame, Beige.</p>
-                <img src="path/to/image.jpg" alt="Item Image">
+                <img src="images/bedframe.jpg" alt="Item Image">
                 <p>Price: $50.00</p>
             </div>
             
+
             <div class="item" onclick="showPopup()">
-                <h2>Convertible Sectional Sofa</h2>
-                <p>79-inch, 3 Seat, L-Shaped Sofa with Removable Pillows, Linen Fabric, Black.</p>
-                <img src="path/to/image.jpg" alt="Item Image">
-                <p>Price: $XX</p>
+                <h2>Coffee Table</h2>
+                <p>Panana Modern Coffee Table with 2 Drawers, White.</p>
+                <img src="images/coffeetable.jpg" alt="Item Image">
+                <p>Price: $50.00</p>
             </div>
             
             <div class="item" onclick="showPopup()">

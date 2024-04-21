@@ -36,72 +36,31 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             border-radius: 5px;
         }
-        .item {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            border: 1px solid #ddd;
-            margin-bottom: 10px;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
             padding: 10px;
-            background: plum;
-            border-radius: 5px;
-            transition: transform 0.2s;
-            cursor: pointer;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
         }
-        .item:hover {
-            transform: scale(1.02);
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        th {
+            background-color: #8b50a3;
+            color: white;
         }
-        .item h2 {
-            color: #333;
-            margin: 0;
-            font-size: 42px; /* Adjust this value to change the title size */
+        img {
+            max-width: 150px;
+            height: auto;
         }
-
-        .item p {
-            line-height: 1.5;
-            color: #666;
-            font-size: 24px; /* Adjust this value to change the description size */
+        item-link {
+            text-decoration: none;
+            color: #8b50a3;
         }
-
-        .item img {
-            max-width: 50%;
-            border-radius: 10px;
+        item-link:hover {
+            text-decoration: underline;
         }
-        /* Popup styles */
-        #popup {
-            display: none;
-            position: fixed;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            width: 300px;
-            padding: 20px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-            background: white;
-            border-radius: 5px;
-            text-align: center;
-            font-size: 20px;
-        }
-        #popup h2 {
-            margin: 0 0 10px 0;
-        }
-        .close-btn {
-            float: right;
-            cursor: pointer;
-        }
-        .images-container img {
-            box-sizing: border-box;
-            display: inline-block;
-            vertical-align: top;
-            max-width: 49%;
-            width: auto; /* Adjust the width as necessary */
-            height: auto; /* Maintain aspect ratio */
-            margin: 0; /* Remove default margin */
-            padding: 0; /* Remove default padding */
-        }
-
     </style>
 </head>
 <body>
@@ -113,91 +72,94 @@
 
     <div class="container">
         <section class="content">
-            <p>Welcome to our furniture sale! Below you can find items available for sale with their descriptions and prices. <br>
-                <br>
-                - Everything was purchased in September 2023 <br>
-                - Items will be available until the end of May 2024 <br>
-                - 15% off --> if you can pickup items (164 N Beacon St, 02135) <br>
-                - 10% off --> buying 3+ items </p>
-            
-            <!-- Items -->
-            <div class="item" onclick="showPopup()">
-                <h2>TV Stand</h2>
-                <p>Modern LED TV Stand, White, with Glass Shelves and 2 Drawers.</p>
-                <p>60.99 x 13.77 x 17.71 inches </p>
-                <img src="images/tvstand4.jpg" alt="Item Image">
-                <p>Price: $99.99</p>
-            </div>
+            <table>
+                <tr>
+                    <th>Item Name</th>
+                    <th>Image</th>
+                    <th>Description and Size</th>
+                    <th>Original Link</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Modern LED TV Stand</td>
+                    <td><img src="images/tvstand4.jpg" alt="TV Stand"></td>
+                    <td>White, with Glass Shelves and 2 Drawers<br>60.99 x 13.77 x 17.71 inches</td>
+                    <td><a href="https://www.amazon.com/gp/product/B0C1YCGZ5M/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&th=1" class="item-link">Amazon</a></td>
+                    <td>$99.99</td>
+                </tr>
 
-            <div class="item" onclick="showPopup()">
-                <h2>Kitchen Island w/ Leaf</h2>
-                <p>Island with Drop-Leaf Breakfast Bar, 5 Universal Wheels, Storage Cabinet, 3 Drawers, White.</p>
-                <p>30 x 53 x 36 inches </p>
-                <div class="images-container">
-                    <img src="images/island1.jpg" alt="Item Image">
-                    <img src="images/island2.jpg" alt="Second Item Image"> <!-- Update the src with your second image path -->
-                </div>
-                <p>Price: $149.99</p>
-            </div>
+                <!-- Kitchen Island -->
+            <tr>
+                <td>Kitchen Island w/ Breakfast Bar</td>
+                <td>
+                    <img src="images/island1.jpg" alt="Kitchen Island">
+                </td>
+                <td>White Island with Drop-Leaf Breakfast Bar, 5 Universal Wheels, Storage Cabinet, 3 Drawers<br>30 x 53 x 36 inches</td>
+                <td><a href="https://www.amazon.com/gp/product/B09W8NSNF8/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1" class="item-link">Amazon</a></td>
+                <td>$149.99</td>
+            </tr>
+             <!-- Bar Stool Set -->
+            <tr>
+                <td>Bar Stool Set</td>
+                <td><img src="images/barstool.jpg" alt="Barstools"></td>
+                <td>2x Orange Adjustable Bar Stools<br>15 x 17.5 x 45 inches</td>
+                <td><a href="https://www.amazon.com/gp/product/B0B35B97HY/ref=ppx_yo_dt_b_asin_title_o06_s00?ie=UTF8&psc=1" class="item-link">Amazon</a></td>
+                <td>$24.99 / each</td>
+            </tr>
+            <!-- Convertible Sectional Sofa -->
+            <tr>
+                <td>Convertible Sectional Sofa</td>
+                <td><img src="images/couch.jpg" alt="Convertible Sectional Sofa"></td>
+                <td>Black 3 Seat, L-Shaped Sofa with Removable Pillows, Linen Fabric<br>49.2 x 79.1 x 34.2 inches</td>
+                <td><a href="https://www.amazon.com/gp/product/B0BYWLBYK8/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1" class="item-link">Amazon</a></td>
+                <td>$149.99</td>
+            </tr>
+            <!-- Queen Bed Frame -->
+            <tr>
+                <td>Queen Bed Frame</td>
+                <td><img src="images/bedframe.jpg" alt="Queen Bed Frame"></td>
+                <td>Beige Frame with Velvet Headboard, Metal Frame<br>81.3 x 62.4 x 46.7 inches</td>
+                <td><a href="https://www.amazon.com/gp/product/B0CB4G14RC/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1" class="item-link">Amazon</a></td>
+                <td>$49.99</td>
+            </tr>
+            <!-- Coffee Table -->
+            <tr>
+                <td>Coffee Table</td>
+                <td><img src="images/coffeetable.jpg" alt="Coffee Table"></td>
+                <td>White Panana Modern Coffee Table with 2 Drawers<br>29.21 x 30.91 x 16.54 inches</td>
+                <td><a href="https://www.amazon.com/gp/product/B0BM5KCCLV/ref=ppx_yo_dt_b_asin_title_o09_s01?ie=UTF8&psc=1" class="item-link">Amazon</a></td>
+                <td>$49.99</td>
+            </tr>
+            <!-- Dresser -->
+            <tr>
+                <td>Dresser</td>
+                <td><img src="images/dresser-1.jpg" alt="Dresser"></td>
+                <td>White Dresser with 6 Drawers, Open Shelf Storage<br>15.7 x 45.67 x 37 inches</td>
+                <td><a href="https://www.amazon.com/gp/product/B0CFVC5YHX/ref=ppx_yo_dt_b_asin_title_o08_s00?ie=UTF8&psc=1" class="item-link">Amazon</a></td>
+                <td>$149.99</td>
+            </tr>
+            <!-- Microwave -->
+            <tr>
+                <td>Microwave</td>
+                <td><img src="images/microwave1.jpg" alt="Microwave"></td>
+                <td>White Countertop Microwave Oven, 700 Watts<br>0.7 Cu</td>
+                <td><a href="https://www.walmart.com/ip/Mainstays-0-7-Cu-ft-Countertop-Microwave-Oven-700-Watts-White-New/661310942?wmlspartner=wlpa&selectedSellerId=0&wl13=2139&adid=22222222277661310942_117755028669_12420145346&wmlspartner=wmtlabs&wl0=&wl1=g&wl2=c&wl3=501107745824&wl4=pla-306310554666&wl5=9001996&wl6=&wl7=&wl8=&wl9=pla&wl10=8175035&wl11=local&wl12=661310942&wl13=2139&veh=sem_LIA&gclsrc=aw.ds&&adid=22222222237661310942_117755028669_12420145346&wl0=&wl1=g&wl2=c&wl3=501107745824&wl4=pla-306310554666&wl5=9001996&wl6=&wl7=&wl8=&wl9=pla&wl10=8175035&wl11=local&wl12=661310942&veh=sem&gad_source=1&gclid=CjwKCAiA8sauBhB3EiwAruTRJtDih0VfNywTZCfLre8EzsVAiTYQP0wdvlVBZsInv5r3-aU9ennnMBoCMroQAvD_BwE" class="item-link">Walmart</a></td>
+                <td>$24.99</td>
+            </tr>
+            <!-- Mirror -->
+            <tr>
+                <td>Mirror</td>
+                <td>
+                    <img src="images/mirror2.jpg" alt="Mirror">
+                </td>
+                <td>Golden Full Body Mirror with Stand.<br>59 x 16 inches</td>
+                <td><a href="https://www.amazon.com/gp/product/B0C853XCDM/ref=ppx_yo_dt_b_asin_title_o07_s00?ie=UTF8&psc=1" class="item-link">Amazon</a></td>
+                <td>$24.99</td>
+            </tr>
 
+                
 
-            <div class="item" onclick="showPopup()">
-                <h2>Convertible Sectional Sofa</h2>
-                <p>3 Seat, L-Shaped Sofa with Removable Pillows, Linen Fabric, Black. </p>
-                <p>49.2 x 79.1 x 34.2 inches</p>
-                <img src="images/couch.jpg" alt="Item Image">
-                <p>Price: $149.99</p>
-            </div>
-
-            
-            <div class="item" onclick="showPopup()">
-                <h2>Queen Bed Frame</h2>
-                <p>Frame with Velvet Headboard, Metal Frame, Beige.</p>
-                <p>81.3 x 62.4 x 46.7 inches</p>
-                <img src="images/bedframe.jpg" alt="Item Image">
-                <p>Price: $49.99</p>
-            </div>
-            
-
-            <div class="item" onclick="showPopup()">
-                <h2>Coffee Table</h2>
-                <p>Panana Modern Coffee Table with 2 Drawers, White.</p>
-                <p>29.21 x 30.91 x 16.54 inches</p>
-                <img src="images/coffeetable.jpg" alt="Item Image">
-                <p>Price: $49.99</p>
-            </div>
-            
-            <div class="item" onclick="showPopup()">
-                <h2>Dresser</h2>
-                <p>White Dresser with 6 Drawers, Open Shelf Storage.</p>
-                <p>15.7 x 45.67 x 37 inches</p>
-                <img src="images/dresser-1.jpg" alt="Item Image">
-                <p>Price: $149.99</p>
-            </div>
-
-            
-            <div class="item" onclick="showPopup()">
-                <h2>Microwave</h2>
-                <p>Countertop Microwave Oven, 700 Watts, White.</p>
-                <p>0.7 Cu</p>
-                <img src="images/microwave1.jpg" alt="Item Image">
-                <p>Price: $24.99</p>
-            </div>
-
-
-            <div class="item" onclick="showPopup()">
-                <h2>Mirror</h2>
-                <p>Golden Full Body Mirror with Stand.</p>
-                <p>59 x 16 inches</p>
-                <div class="images-container">
-                    <img src="images/mirror.jpg" alt="Item Image">
-                    <img src="images/mirror2.jpg" alt="Second Item Image"> <!-- Update the src with your second image path -->
-                </div>
-                <p>Price: $24.99</p>
-            </div>
-            
-            <!-- Additional items with onclick="showPopup()" ... -->
-            
+            </table>
         </section>
     </div>
 

@@ -1,101 +1,203 @@
-<div class="container">
-    <section class="content">
-        <table>
+<!DOCTYPE html>
+<html> 
+<head>
+    <title>Furniture Sale</title>
+    <style>
+        body {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: linear-gradient(120deg, #8b50a3, #870787);
+            color: black;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #870787 1px solid;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            padding: 5px 0;
+            margin: 0;
+            text-align: center;
+            font-size: 4.5em;
+            text-shadow: 3px 3px 0 white, 10px 10px 10px plum;
+        }
+        .content {
+            padding: 20px;
+            background: #dbdbdb;
+            font-size: 24px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #8b50a3;
+            color: white;
+        }
+        img {
+            max-width: 150px;
+            height: auto;
+        }
+        item-link {
+            text-decoration: none;
+            color: #8b50a3;
+        }
+        item-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Furniture Sale</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="content">
+            <p>Leaving Boston May 31st, everything below is available UNTIL then. Located near 164 N Beacon St, 02135, with a parking lot out back for pickup.</p>
+            <p>Feel free to call if you would like to Facetime to see the items, of have any further questions.</p>
+            <p>Phone: (917) 524-5650</p>
+        </section>
+    </div>
+
+    <div class="container">
+        <section class="content">
+            <table>
+                <tr>
+                    <th>Item Name</th>
+                    <th>Image</th>
+                    <th>Description and Size</th>
+                    <th>Original Link</th>
+                    <th>Price</th>
+                </tr>
+                <!-- Display Rack -->
+                <tr>
+                    <td>Corner Display Rack</td>
+                    <td><img src="images/display-rack2.jpg" alt="Microwave"></td>
+                    <td>5-tier, Espresso/black color<br>1.61"D x 11.6"W x 57.72"H</td>
+                    <td><a href="https://www.amazon.com/Furinno-99811BK-GY-Turn-N-Tube-Corner/dp/B003VP5TPW/ref=asc_df_B007E4WUEO/?tag=hyprod-20&linkCode=df0&hvadid=192300683038&hvpos=&hvnetw=g&hvrand=7241857813999678084&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9001996&hvtargid=pla-494777426552&mcid=8c0649faeb3f304185f127e852599371&gclid=CjwKCAiA8sauBhB3EiwAruTRJtEybWy5j9Dr6sUa6fjRTbkK_zW-C4Lub21TyqrUxHNHOwKNpnyYgBoCcWQQAvD_BwE&th=1" class="item-link">Amazon</a></td>
+                    <td>$19.99</td>
+                </tr>
+                <!-- Microwave -->
+                <tr>
+                    <td>Microwave</td>
+                    <td><img src="images/microwave1.jpg" alt="Microwave"></td>
+                    <td>White Countertop Microwave Oven, 700 Watts<br>0.7 Cu</td>
+                    <td><a href="https://www.walmart.com/ip/Mainstays-0-7-Cu-ft-Countertop-Microwave-Oven-700-Watts-White-New/661310942?wmlspartner=wlpa&selectedSellerId=0&wl13=2139&adid=22222222277661310942_117755028669_12420145346&wmlspartner=wmtlabs&wl0=&wl1=g&wl2=c&wl3=501107745824&wl4=pla-306310554666&wl5=9001996&wl6=&wl7=&wl8=&wl9=pla&wl10=8175035&wl11=local&wl12=661310942&wl13=2139&veh=sem_LIA&gclsrc=aw.ds&&adid=22222222237661310942_117755028669_12420145346&wl0=&wl1=g&wl2=c&wl3=501107745824&wl4=pla-306310554666&wl5=9001996&wl6=&wl7=&wl8=&wl9=pla&wl10=8175035&wl11=local&wl12=661310942&veh=sem&gad_source=1&gclid=CjwKCAiA8sauBhB3EiwAruTRJtDih0VfNywTZCfLre8EzsVAiTYQP0wdvlVBZsInv5r3-aU9ennnMBoCMroQAvD_BwE" class="item-link">Walmart</a></td>
+                    <td>$24.99</td>
+                </tr>
+                <!-- Bar Stool Set -->
+               <tr>
+                   <td>Bar Stool Set</td>
+                   <td><img src="images/barstool.jpg" alt="Barstools"></td>
+                   <td>2x Orange Adjustable Bar Stools<br>15 x 17.5 x 45 inches</td>
+                   <td><a href="https://www.amazon.com/gp/product/B0B35B97HY/ref=ppx_yo_dt_b_asin_title_o06_s00?ie=UTF8&psc=1" class="item-link">Amazon</a></td>
+                   <td>$49.98<br>($24.99 / each)</td>
+               </tr>
+               <!-- Queen Bed Frame -->
+               <tr>
+                   <td>Queen Bed Frame</td>
+                   <td><img src="images/bedframe.jpg" alt="Queen Bed Frame"></td>
+                   <td>Beige Frame with Velvet Headboard, Metal Frame<br>81.3 x 62.4 x 46.7 inches</td>
+                   <td><a href="https://www.amazon.com/gp/product/B0CB4G14RC/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1" class="item-link">Amazon</a></td>
+                   <td>$49.99</td>
+               </tr>
+                <!-- Modern LED TV Stand -->
+                <tr>
+                    <td>Modern LED TV Stand</td>
+                    <td><img src="images/tvstand4.jpg" alt="TV Stand"></td>
+                    <td>White, with Glass Shelves and 2 Drawers<br>60.99 x 13.77 x 17.71 inches</td>
+                    <td><a href="https://www.amazon.com/gp/product/B0C1YCGZ5M/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&th=1" class="item-link">Amazon</a></td>
+                    <td>$99.99</td>
+                </tr>
+
+                <!-- Kitchen Island -->
             <tr>
-                <th>Item Name</th>
-                <th>Image</th>
-                <th>Description and Size</th>
-                <th>Original Link</th>
-                <th>Price</th>
+                <td>Kitchen Island w/ Breakfast Bar</td>
+                <td>
+                    <img src="images/island1.jpg" alt="Kitchen Island">
+                </td>
+                <td>White Island with Drop-Leaf Breakfast Bar, 5 Universal Wheels, Storage Cabinet, 3 Drawers<br>30 x 53 x 36 inches</td>
+                <td><a href="https://www.amazon.com/gp/product/B09W8NSNF8/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1" class="item-link">Amazon</a></td>
+                <td>$149.99</td>
             </tr>
-            <!-- Display Rack -->
+            <!-- Convertible Sectional Sofa -->
             <tr>
-                <td>Corner Display Rack</td>
-                <td><img src="images/display-rack2.jpg" alt="Microwave"></td>
-                <td>5-tier, Espresso/black color<br>1.61"D x 11.6"W x 57.72"H</td>
-                <td><a href="https://www.amazon.com/Furinno-99811BK-GY-Turn-N-Tube-Corner/dp/B003VP5TPW/ref=asc_df_B007E4WUEO/?tag=hyprod-20&linkCode=df0&hvadid=192300683038&hvpos=&hvnetw=g&hvrand=7241857813999678084&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9001996&hvtargid=pla-494777426552&mcid=8c0649faeb3f304185f127e852599371&gclid=CjwKCAiA8sauBhB3EiwAruTRJtEybWy5j9Dr6sUa6fjRTbkK_zW-C4Lub21TyqrUxHNHOwKNpnyYgBoCcWQQAvD_BwE&th=1" class="item-link">Amazon</a></td>
-                <td>$19.99</td>
-            </tr>
-            <!-- Microwave -->
-            <tr>
-                <td>Microwave</td>
-                <td><img src="images/microwave1.jpg" alt="Microwave"></td>
-                <td>White Countertop Microwave Oven, 700 Watts<br>0.7 Cu</td>
-                <td><a href="https://www.walmart.com/ip/Mainstays-0-7-Cu-ft-Countertop-Microwave-Oven-700-Watts-White-New/661310942?wmlspartner=wlpa&selectedSellerId=0&wl13=2139&adid=22222222277661310942_117755028669_12420145346&wmlspartner=wmtlabs&wl0=&wl1=g&wl2=c&wl3=501107745824&wl4=pla-306310554666&wl5=9001996&wl6=&wl7=&wl8=&wl9=pla&wl10=8175035&wl11=local&wl12=661310942&wl13=2139&veh=sem_LIA&gclsrc=aw.ds&&adid=22222222237661310942_117755028669_12420145346&wl0=&wl1=g&wl2=c&wl3=501107745824&wl4=pla-306310554666&wl5=9001996&wl6=&wl7=&wl8=&wl9=pla&wl10=8175035&wl11=local&wl12=661310942&veh=sem&gad_source=1&gclid=CjwKCAiA8sauBhB3EiwAruTRJtDih0VfNywTZCfLre8EzsVAiTYQP0wdvlVBZsInv5r3-aU9ennnMBoCMroQAvD_BwE" class="item-link">Walmart</a></td>
-                <td>$24.99</td>
-            </tr>
-            <!-- Bar Stool Set -->
-           <tr>
-               <td>Bar Stool Set</td>
-               <td><img src="images/barstool.jpg" alt="Barstools"></td>
-               <td>2x Orange Adjustable Bar Stools<br>15 x 17.5 x 45 inches</td>
-               <td><a href="https://www.amazon.com/gp/product/B0B35B97HY/ref=ppx_yo_dt_b_asin_title_o06_s00?ie=UTF8&psc=1" class="item-link">Amazon</a></td>
-               <td>$49.98<br>($24.99 / each)</td>
-           </tr>
-           <!-- Queen Bed Frame -->
-           <tr>
-               <td>Queen Bed Frame</td>
-               <td><img src="images/bedframe.jpg" alt="Queen Bed Frame"></td>
-               <td>Beige Frame with Velvet Headboard, Metal Frame<br>81.3 x 62.4 x 46.7 inches</td>
-               <td><a href="https://www.amazon.com/gp/product/B0CB4G14RC/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1" class="item-link">Amazon</a></td>
-               <td>$49.99</td>
-           </tr>
-            <!-- Modern LED TV Stand -->
-            <tr>
-                <td>Modern LED TV Stand</td>
-                <td><img src="images/tvstand4.jpg" alt="TV Stand"></td>
-                <td>White, with Glass Shelves and 2 Drawers<br>60.99 x 13.77 x 17.71 inches</td>
-                <td><a href="https://www.amazon.com/gp/product/B0C1YCGZ5M/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&th=1" class="item-link">Amazon</a></td>
+                <td>Convertible Sectional Sofa</td>
+                <td><img src="images/couch.jpg" alt="Convertible Sectional Sofa"></td>
+                <td>Black 3 Seat, L-Shaped Sofa with Removable Pillows, Linen Fabric<br>49.2 x 79.1 x 34.2 inches</td>
+                <td><a href="https://www.amazon.com/gp/product/B0BYWLBYK8/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1" class="item-link">Amazon</a></td>
                 <td>$99.99</td>
             </tr>
+            <!-- Dresser -->
+            <tr>
+                <td>Dresser</td>
+                <td><img src="images/dresser-1.jpg" alt="Dresser"></td>
+                <td>White Dresser with 6 Drawers, Open Shelf Storage<br>15.7 x 45.67 x 37 inches</td>
+                <td><a href="https://www.amazon.com/gp/product/B0CFVC5YHX/ref=ppx_yo_dt_b_asin_title_o08_s00?ie=UTF8&psc=1" class="item-link">Amazon</a></td>
+                <td>$149.99</td>
+            </tr>
+            <!-- Coffee Table -->
+            <tr>
+                <td>Coffee Table</td>
+                <td><img src="images/coffeetable.jpg" alt="Coffee Table"></td>
+                <td>White Panana Modern Coffee Table with 2 Drawers<br>29.21 x 30.91 x 16.54 inches</td>
+                <td><a href="https://www.amazon.com/gp/product/B0BM5KCCLV/ref=ppx_yo_dt_b_asin_title_o09_s01?ie=UTF8&psc=1" class="item-link">Amazon</a></td>
+                <td>$39.99</td>
+            </tr>
+            <!-- Mirror -->
+            <tr>
+                <td>Mirror</td>
+                <td>
+                    <img src="images/mirror2.jpg" alt="Mirror">
+                </td>
+                <td>Golden Full Body Mirror with Stand.<br>59 x 16 inches</td>
+                <td><a href="https://www.amazon.com/gp/product/B0C853XCDM/ref=ppx_yo_dt_b_asin_title_o07_s00?ie=UTF8&psc=1" class="item-link">Amazon</a></td>
+                <td>SOLD</td>
+            </tr>
 
-            <!-- Kitchen Island -->
-        <tr>
-            <td>Kitchen Island w/ Breakfast Bar</td>
-            <td>
-                <img src="images/island1.jpg" alt="Kitchen Island">
-            </td>
-            <td>White Island with Drop-Leaf Breakfast Bar, 5 Universal Wheels, Storage Cabinet, 3 Drawers<br>30 x 53 x 36 inches</td>
-            <td><a href="https://www.amazon.com/gp/product/B09W8NSNF8/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1" class="item-link">Amazon</a></td>
-            <td>$149.99</td>
-        </tr>
-        <!-- Convertible Sectional Sofa -->
-        <tr>
-            <td>Convertible Sectional Sofa</td>
-            <td><img src="images/couch.jpg" alt="Convertible Sectional Sofa"></td>
-            <td>Black 3 Seat, L-Shaped Sofa with Removable Pillows, Linen Fabric<br>49.2 x 79.1 x 34.2 inches</td>
-            <td><a href="https://www.amazon.com/gp/product/B0BYWLBYK8/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1" class="item-link">Amazon</a></td>
-            <td>$99.99</td>
-        </tr>
-        <!-- Dresser -->
-        <tr>
-            <td>Dresser</td>
-            <td><img src="images/dresser-1.jpg" alt="Dresser"></td>
-            <td>White Dresser with 6 Drawers, Open Shelf Storage<br>15.7 x 45.67 x 37 inches</td>
-            <td><a href="https://www.amazon.com/gp/product/B0CFVC5YHX/ref=ppx_yo_dt_b_asin_title_o08_s00?ie=UTF8&psc=1" class="item-link">Amazon</a></td>
-            <td>$149.99</td>
-        </tr>
-        <!-- Coffee Table -->
-        <tr>
-            <td>Coffee Table</td>
-            <td><img src="images/coffeetable.jpg" alt="Coffee Table"></td>
-            <td>White Panana Modern Coffee Table with 2 Drawers<br>29.21 x 30.91 x 16.54 inches</td>
-            <td><a href="https://www.amazon.com/gp/product/B0BM5KCCLV/ref=ppx_yo_dt_b_asin_title_o09_s01?ie=UTF8&psc=1" class="item-link">Amazon</a></td>
-            <td>$39.99</td>
-        </tr>
-        <!-- Mirror -->
-        <tr>
-            <td>Mirror</td>
-            <td>
-                <img src="images/mirror2.jpg" alt="Mirror">
-            </td>
-            <td>Golden Full Body Mirror with Stand.<br>59 x 16 inches</td>
-            <td><a href="https://www.amazon.com/gp/product/B0C853XCDM/ref=ppx_yo_dt_b_asin_title_o07_s00?ie=UTF8&psc=1" class="item-link">Amazon</a></td>
-            <td>SOLD</td>
-        </tr>
+                
 
-            
+            </table>
+        </section>
+    </div>
 
-        </table>
-    </section>
-</div>
+    <!-- Popup for contact information -->
+    <div id="popup">
+        <span class="close-btn" onclick="hidePopup()">x</span>
+        <h2>Contact Us</h2>
+        <p>Interested in an item? Contact us at:</p>
+        <p>Phone: (917) 524-5650</p>
+        <p>Email: jaylinstarlinganaway@gmail.com</p>
+    </div>
+
+    <script>
+        function showPopup() {
+            document.getElementById('popup').style.display = 'block';
+        }
+        
+        function hidePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
+
